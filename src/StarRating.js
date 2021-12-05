@@ -1,15 +1,14 @@
 import React from 'react';
-import Star from  './Star';
+import Star from './Star';
 
-function StarRating() {
-    return (
-        <div id='star-rating'>
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-        </div>
-    )
+const createArray = (length) => [
+    ...Array(length)
+];
+
+function StarRating({ totalStars = 5 }) {
+    return createArray(totalStars).map((n, i) => (
+        <Star key={i} />
+    ));
 }
 
 export default StarRating;

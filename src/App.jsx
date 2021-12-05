@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import StarRating from './StarRating';
 
 function App() {
   return (
-    <p>
-      Cleanedup React App
-    </p>
+    <>
+    <h1>Star Rating</h1>
+    <StarRating totalStars={3}/>
+    </>
   );
 }
 
