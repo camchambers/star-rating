@@ -9,7 +9,7 @@ function StarRating({ totalStars = 5 }) {
     const [selectedStars, setSelectedStars] = useState(0);
     console.log(createArray(5));
     return (
-        <>
+        <div class='stars'>
             {createArray(totalStars).map((n, i) => (
                 <Star
                     key={i}
@@ -18,7 +18,7 @@ function StarRating({ totalStars = 5 }) {
                 />
             ))}
             <p>{selectedStars} of {totalStars}</p>
-        </>
+        </div>
     );
 }
 
