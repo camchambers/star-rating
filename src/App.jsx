@@ -4,10 +4,10 @@ import StarRating from './StarRating';
 
 function App() {
   return (
-    <>
-    <h1>Star Rating</h1>
-    <StarRating totalStars={3}/>
-    </>
+    <div id='main'>
+      <h1>Star Rating</h1>
+      <StarRating totalStars={5} />
+    </div>
   );
 }
 
